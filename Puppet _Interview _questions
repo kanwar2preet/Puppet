@@ -1,1 +1,10 @@
-# Puppet Interview questions and 
+# Puppet Interview questions and general tips for puppet.
+
+
+# Tip1 : If we are using a Trifecta of package, file and service and we remove package manually so next time when puppet apply is used 
+# it will try to figure out best possible order to install package and restart the service but its not Always necessary that puppet will
+# be right everytime so manual odering is defined in manifest.
+
+
+
+
