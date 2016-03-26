@@ -1,0 +1,14 @@
+# Above manifest will help us to recover file using puppet
+#
+#Before puppet modifies a file puppet places the file in client file bucket.
+#
+# client file bucket is stored on the node
+# To change a file to its old location we need to know the hash
+# This can be located in /var/log/messges
+# command is puppet filebucket -l --bucket /var/lib/puppet/clientbucket restore /puppet.txt hash_of_file_req
+# -l paramenter tells that it is happening locally
+
+
+
+# In case you just want to view the contents instead of restoring it:
+# puppet filebucket -l --bucket /var/lib/puppet/clientbucket get /puppet.txt hash_of_file_req
