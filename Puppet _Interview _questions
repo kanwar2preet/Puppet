@@ -6,5 +6,27 @@
 # be right everytime so manual odering is defined in manifest.
 
 
+# TIP2:  Puppet deals with different resource names in different OS e.g ntpd in centos and ntp in ubuntu by using selector.
+
+# TIP3: In puppet variables begin with $sign
+
+#TIP4: Selector expressions are like case statement but they resturn a value instead of executing a block code.
+# One use for selector is to tell pupppet the OS kind and install the package accordingly e.g ntpd in centos and ntp in ubuntu.
+
+
+#Selectors can be used wherever a value is expected. This includes:
+
+# Variable assignments
+# Resource attributes
+# Function arguments
+# Resource titles
+# A value in another selector
+
+
+
+#TIP5: $osfamily is a builtin puppet vaiable called fact which is basically a string that contains the name os the OS.
+# ?{ begins the selector statement 
+
+
 
 
