@@ -27,6 +27,11 @@
 #TIP5: $osfamily is a builtin puppet vaiable called fact which is basically a string that contains the name os the OS.
 # ?{ begins the selector statement 
 
+#TIP6 : removing resource declarations will not remove the resources from OS, we have to use attribute value pair for this.
+
+
+
+
 
 
 
