@@ -9,8 +9,10 @@ node 'puppet-learn' {
   }
 }
 
+###### if we run puppet apply followed by file name then it should create a new file info.txt.
 ######   
-######
+###### If puppet apply is run again it will create a new file again becoz erb code will create a new time stamp 
+###### which will result in different hashing of the file.
 ######
 ######
 
