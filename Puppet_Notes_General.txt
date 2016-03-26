@@ -1,0 +1,13 @@
+Core resource types in puppet : notify,file,package,service,exec,cron,user,group.
+
+Manifest : Puppet programs are called file manifests and they use .pp extension.
+
+Resource Declaration : it represents the desired state of one resource.
+
+Before and require handle dependencies in the puppet. Before is used in earlier resource and lists resources that depend upon it.
+Require is used in later resource and lists resources that depend upon it.
+
+Notify and subscribe metaparameters make dependency relationships the way before and require do but they also make referesh relationships.
+Not only will the earlier resource in the pair get synced first but if puppet make any changes to that resource, it will send a refresh 
+event to later resource which will react accordingly.
+
