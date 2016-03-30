@@ -16,7 +16,7 @@ node 'puppet-learn' {
   
 }
 
-Refer below for attributes for  package resource
+#Refer below for attributes for  package resource
 
 
 
