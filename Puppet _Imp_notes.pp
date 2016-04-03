@@ -36,8 +36,8 @@ usual o/p is /etc/puppetlabs/code/environments/production/modules
 # All Puppet file server URIs are structured as follows:    
   puppet://{server hostname (optional)}/{mount point}/{remainder of path}
 
-
-
+# service pe-httpd status 
+# Tells you the pid for the httpd running for PE.
 
 
 
