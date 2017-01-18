@@ -39,7 +39,9 @@ usual o/p is /etc/puppetlabs/code/environments/production/modules
 # service pe-httpd status 
 # Tells you the pid for the httpd running for PE.
 
+#   hiera.yaml file : for defining external parameter sources
 
+puppet config print environmentpath environment
 
 
 
