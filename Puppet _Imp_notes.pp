@@ -44,6 +44,7 @@ usual o/p is /etc/puppetlabs/code/environments/production/modules
 puppet config print environmentpath environment
 
 
-
+# use below command to find out current hiera file:
+puppet config print hiera_config
 
 
