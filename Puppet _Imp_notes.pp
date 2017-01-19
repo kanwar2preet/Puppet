@@ -48,3 +48,13 @@ puppet config print environmentpath environment
 puppet config print hiera_config
 
 
+
+puppet config print hiera_config
+
+puppet config print hiera_config '/etc/puppetlabs/code/environments/hiera2.yaml'
+
+#command to change the hiera config file
+
+puppet config set hiera_config <new path> 
+
+
