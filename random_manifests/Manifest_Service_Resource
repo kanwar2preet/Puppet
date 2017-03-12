@@ -1,0 +1,36 @@
+#Constructing service resource declarations:
+
+######     Note : Booleans like enable => true cannot be in quotes
+
+
+
+#  service { 'name':
+#	 enable      => true,
+#	 ensure      => 'running',
+#  hasrestart => true,
+#  hasstatus  => true,
+#  require    => Class["config"],
+#  }
+
+
+# Manifest code is below :
+
+node 'learning.puppetlabs.vm' {
+    file { '/node.txt':
+          ensure      => 'present',
+          content => inline_template ("Created by puppet at <%= Time.now %>\n"),
+                }
+    package { 'ntp':
+      ensure => installed,
+             }
+    service { 'ntpd':
+        enable           => true,
+        ensure         => running,
+         #hasrestart  => true,
+         #hasstatus => true,
+         #require => Class["config"],
+         }
+
+
+                          
+}
